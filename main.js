@@ -12,3 +12,23 @@ function toggleDetail(e){
 
     $(detail).slideToggle()
 }
+
+function onFormSubmit(e){
+    e.preventDefault();
+    const email = $("#email")
+    const subject = $("#subject")
+    const message = $("#message")
+
+    if(!$(email).val()){
+        alert("Tuliskan Email Anda !! ")
+    } else if(!$(subject).val()){
+        alert("Subject Harus Diisi !! ")
+    } else if (!$(message).val()){
+        alert("Message Tidak Boleh Kosong!!!")
+    } else {
+        alert("Form Terkirim")
+        $(email).val("")
+        $(subject).val("")
+        $(message).val("")
+    }
+}

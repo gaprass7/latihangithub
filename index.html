@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fs-4 fw-bold" href="#">Navbar</a>
+        <a class="navbar-brand fs-4 fw-bold" href="#">Gaprass</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,13 +21,13 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -35,21 +35,21 @@
     </nav>
 
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+        <div class="col-12 col-md-8 text-md-start text-center">
           <h3>Hello I am</h3>
           <h1 class="fw-bold">Muhammad Ganang Prasetya</h1>
           <p>I am Fullstack Web Developer</p>
-          <a class="btn" href="images/potrait.png" download>Resume</a>
+          <a class="btn" href="images/potraitg.png" download>Resume</a>
         </div>
-        <div class="col-4">
-          <img id="ganang" src="images/potraitg.png" alt="ganang">
+        <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+          <img src="images/potraitg.png" alt="ganang">
         </div>
-      </div>
-      <div class="arrow w-100 d-flex flex-column align-items-center">
-        <a class="text-decoration-none text-dark" href="#">More Info</a>
+      </div><br>
+      <a  href="#about" class="text-decoration-none arrow w-100 d-flex flex-column align-items-center">
+        <div class="text-dark">More Info</div>
         <img id="arrow" src="images/arrow.svg" alt="">
-      </div>
+      </a>
     </section>
 
     <section id="about" class="about container">
@@ -90,8 +90,8 @@
 
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde vero soluta voluptates eaque perferendis magni aperiam possimus omnis nam animi ex modi, et consequuntur quos dolorem ducimus blanditiis eveniet obcaecati?</p></div>
-        <div class="col work-img">
+        <div class="col-12 col-md-5"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde vero soluta voluptates eaque perferendis magni aperiam possimus omnis nam animi ex modi, et consequuntur quos dolorem ducimus blanditiis eveniet obcaecati?</p></div>
+        <div class="col-12 col-md-6 work-img">
           <div id="work-1" class="work-img-item">
             <img src="images/work-1.png" alt="">
           </div>
@@ -101,6 +101,50 @@
           <div id="work-3" class="work-img-item">
             <img src="images/work-3.png" alt="">
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-lg-6">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi non ipsam quidem mollitia fugit ad consectetur repudiandae hic, quo, consequuntur distinctio nisi debitis voluptate nostrum aut aspernatur earum dolore harum?</p>
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Facebook.svg" alt="">
+              <p class="mb-0 ms-2">ganang</p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Instagram.svg" alt="">
+              <p class="mb-0 ms-2">ganang</p>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img class="w-25" src="images/Twitter.svg" alt="">
+              <p class="mb-0 ms-2">ganang</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <form class="contact-form" onsubmit="onFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Tuliskan Email Anda..">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Tuliskan Subject..">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" class="form-control" id="message" placeholder="Tuliskan Message Anda..">
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content-center mt-5">
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>

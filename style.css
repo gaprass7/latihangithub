@@ -23,10 +23,6 @@ section::before{
     left: -10px;
 }
 
-#ganang {
-    width: 430px;
-}
-
 .btn {
     border: 3px solid black;
     border-radius: 24px;
@@ -39,8 +35,12 @@ section::before{
     border-radius: 24px;
 }
 
+.home img {
+    width: 100%;
+}
+
 .home .arrow img{
-    width: 64px;
+    width: 60px;
 }
 
 .arrow {
@@ -122,6 +122,41 @@ section::before{
 
 #work-3:hover::after {
     content: 'Software Project';
+}
+
+.contact::before{
+    content:  'Contact';
+}
+
+.contact .form-group {
+    padding-bottom: 20px;
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 64px 32px;
+}
+
+.contact label {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px){
+    .home img {
+        width: 65%;
+    }
+
+    section::before {
+        left: -10px;
+        font-size: 52px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    section::before {
+        left: -5px;
+        font-size: 46px;
+    }
 }
 
 @keyframes upDown {
